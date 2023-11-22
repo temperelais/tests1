@@ -27,6 +27,21 @@
                 document.getElementById("RadamaisSaturs").style.display = "none";
                 document.getElementById("raditSaturu").style.display = "none";
             }
+            function mainitParagrafu(){
+                if(document.getElementById("mainamaisParagrafs") == "Te kaut kas mainīsies") {
+                    document.getElementById("mainamaisParagrafs") = "Kaut kas mainījās";
+                } else {
+                    document.getElementById("mainamaisParagrafs") = "Te kaut kas mainīsies";
+                }
+                
+            }
+            function mainitAttelu(){
+                if(document.getElementById("mainigsAttels").src == "https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581506894615-92DOP8D8ZXT93BMQFUL4/worm-boyz.gif?format=300w"){
+                    document.getElementById("mainigsAttels").src = "https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581469361980-8RFK2JDOH60S3VYYXMK1/dolphin-float-1.gif?format=300w";
+                } else{
+                   document.getElementById("mainigsAttels").src = "https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581469361980-8RFK2JDOH60S3VYYXMK1/dolphin-float-1.gif?format=300w" 
+                }
+            }
         </script>
     </head>
     <body>
@@ -130,5 +145,12 @@ Random skaitlis</button>
 <p>Vēlviens paragrāfs</p>
 <button onclick="pasleptSaturu()">Pazūdi</button>
 </div>
+<h3>Trešā poga</h3>
+<button onclick="mainitParagrafu()">Poga kas kaut ko maina</button>
+<p id="mainamsParagrafs">Te kaut kas mainīsies</p>
+<h3>Ceturtā poga, kas maina attēlu</h3>
+<button onclick="mainitAttelu()">Mainīt attēlu</button>
+<img id="mainigsAttels" src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581506894615-92DOP8D8ZXT93BMQFUL4/worm-boyz.gif?format=300w" alt="">
+
     </body>
 </html>
